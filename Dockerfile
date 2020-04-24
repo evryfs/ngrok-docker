@@ -1,4 +1,4 @@
-FROM quay.io/evryfs/base-ubuntu:bionic-20200311
+FROM quay.io/evryfs/base-ubuntu:bionic-20200403
 ARG NGROK_ARCHIVE=https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 RUN curl -L ${NGROK_ARCHIVE} -o /tmp/ngrok.zip && \
   unzip /tmp/ngrok.zip -d /usr/local/bin && \
