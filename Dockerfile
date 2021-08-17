@@ -4,4 +4,5 @@ RUN curl -L ${NGROK_ARCHIVE} -o /tmp/ngrok.zip && \
   unzip /tmp/ngrok.zip -d /usr/local/bin && \
   chmod a+rx /usr/local/bin/ngrok && \
   rm /tmp/ngrok.zip
+COPY probe.sh /
 ENTRYPOINT ["/usr/local/bin/ngrok"]
